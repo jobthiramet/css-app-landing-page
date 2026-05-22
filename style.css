@@ -1,3 +1,79 @@
+/* ล้างค่าขอบจอพื้นฐานและตั้งฟอนต์ให้ดูสะอาดตา */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f5f9; /* สีพื้นหลังเว็บด้านนอกสุด */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* 📦 Container (กล่องแม่คุมภาพรวมแนวราบ) */
+  .features-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* บังคับให้การ์ดทุกใบยืดความสูงเท่ากันอัตโนมัติ */
+    gap: 24px;            /* ช่องไฟเว้นระยะห่างระหว่างการ์ด */
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* 🧸 Feature Card (กล่องลูก - ตกแต่งรายละเอียดตัวการ์ด) */
+  .feature-card {
+    flex: 1;              /* แบ่งความกว้างให้การ์ดทั้ง 3 ใบเท่า ๆ กัน */
+    background: linear-gradient(135deg, #e4ebf9 0%, #e2e4f7 100%); /* ไล่เฉดสีพาสเทลตามภาพ */
+    padding: 35px;
+    border-radius: 24px;  /* ขอบมุมโค้งมนขนาดใหญ่ดูนุ่มนวล */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* จัดเรียงเนื้อหาข้างในให้ชิดซ้ายทั้งหมด */
+    gap: 16px;            /* ระยะช่องไฟระหว่างไอคอน หัวข้อ และคำอธิบาย */
+  }
+  
+  /* การ์ดใบสุดท้ายแอบมีโทนสีชมพูม่วงจาง ๆ แตกต่างจากพวกเล็กน้อยตามภาพจริง */
+  .feature-card:last-child {
+    background: linear-gradient(135deg, #eee3f2 0%, #eae2f2 100%);
+  }
+  
+  /* ⚪ กล่องหุ้มไอคอนสีขาว */
+  .icon-wrapper {
+    background-color: #ffffff;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;  /* ขอบกล่องไอคอนโค้งมนเล็กน้อย */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+  }
+  
+  .icon {
+    font-size: 22px;
+  }
+  
+  /* 📝 หัวข้อ (Heading) */
+  .feature-card h3 {
+    color: #111827;       /* สีตัวอักษรเข้มเกือบดำ */
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  
+  /* 📄 คำอธิบาย (Paragraph) */
+  .feature-card p {
+    color: #6b7280;       /* สีเทาสำหรับเนื้อหาเพื่อให้อ่านง่ายและสบายตา */
+    font-size: 15px;
+    line-height: 1.6;
+  }/* Start coding here */
+
 /* RESET */
 * {
   margin: 0;
