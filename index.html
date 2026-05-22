@@ -96,5 +96,59 @@
 
   </section>
 
+  <!-- CONTACT SECTION -->
+  <section class="contact container">
+    <div class="card">
+      <div class="card__inner">
+        <h2 class="card__title">Get in Touch</h2>
+        <form class="form" action="#" method="post">
+          <div class="form__group">
+            <label class="form__label" for="name">Name</label>
+            <input
+              class="form__input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              autocomplete="name"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+              autocomplete="email"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="message">Message</label>
+            <textarea
+              class="form__textarea"
+              id="message"
+              name="message"
+              placeholder="Your message..."
+              rows="5"
+            ></textarea>
+          </div>
+          <button class="form__submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+      <p class="footer__copy">Acme productivity app ©2024</p>
+      <nav class="footer__nav" aria-label="Footer">
+        <a class="footer__link" href="#">FAQ</a>
+        <a class="footer__link" href="#">Terms</a>
+        <a class="footer__link" href="#">AI Policy</a>
+        <a class="footer__link" href="#">Pricing</a>
+      </nav>
+    </footer>
+
 </body>
 </html>
